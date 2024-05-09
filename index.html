@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertitore di temperatura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Convertitore di temperatura</h1>
+    <p>Inserisci la tua temperatura: <input id="temp" />°</p>
+    <p>
+        <input type="button" value="Converti in Fahrenheit" onclick="document.getElementById('risultato').innerHTML = 
+        (document.getElementById('temp').value * 1.8 + 32) + '° Fahrenheit'" />
+        <input type="button" value="Converti in Celsius" onclick="document.getElementById('risultato').innerHTML = 
+        ((document.getElementById('temp').value - 32) / 1.8).toFixed(2) + '° Celsius'" />  
+    </p>
+    <p>La temperatura corrisponde a <span id="risultato">...</span></p>
+</body>
+</html>
